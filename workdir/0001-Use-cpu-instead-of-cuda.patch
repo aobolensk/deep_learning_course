@@ -1,0 +1,25 @@
+From f2bb80145f49c14d92c8601360ef54c3bfb5a544 Mon Sep 17 00:00:00 2001
+From: Arseniy Obolenskiy <gooddoog@student.su>
+Date: Wed, 20 Apr 2022 18:12:47 +0300
+Subject: [PATCH] Use cpu instead of cuda
+
+---
+ detect.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/detect.py b/detect.py
+index 246b676..6e8b816 100644
+--- a/detect.py
++++ b/detect.py
+@@ -40,7 +40,7 @@ def detect(save_img=False):
+     half = device.type != 'cpu'  # half precision only supported on CUDA
+ 
+     # Load model
+-    model = Darknet(cfg, imgsz).cuda()
++    model = Darknet(cfg, imgsz).cpu()
+     model.load_state_dict(torch.load(weights[0], map_location=device)['model'])
+     #model = attempt_load(weights, map_location=device)  # load FP32 model
+     #imgsz = check_img_size(imgsz, s=model.stride.max())  # check img_size
+-- 
+2.25.1
+
