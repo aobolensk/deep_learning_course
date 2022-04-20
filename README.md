@@ -6,7 +6,7 @@
 - OS: Ubuntu 20.04 (WSL 2 is also supported)
 - [cuda](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
 - docker
-- [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
+- [nvidia-docker](https://docs.nvidia.com/ai-enterprise/deployment-guide/dg-docker.html)
 
 ### How to run:
 
