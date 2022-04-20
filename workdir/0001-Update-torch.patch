@@ -1,0 +1,35 @@
+From 4c8e08ad81d7e67ad69b4476d81b3b77d6da018f Mon Sep 17 00:00:00 2001
+From: Arseniy Obolenskiy <gooddoog@student.su>
+Date: Wed, 20 Apr 2022 13:55:12 +0300
+Subject: [PATCH] Update torch
+
+---
+ requirements.txt | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/requirements.txt b/requirements.txt
+index d8bcf54..6922816 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,6 +1,7 @@
+ # pip install -qr requirements.txt
+ 
+ # base ----------------------------------------
++--find-links https://download.pytorch.org/whl/torch_stable.html
+ Cython
+ matplotlib>=3.2.2
+ numpy>=1.18.5
+@@ -9,8 +10,8 @@ Pillow
+ PyYAML>=5.3.1
+ scipy>=1.4.1
+ tensorboard>=1.5
+-torch==1.7.0
+-torchvision==0.8.1
++torch==1.10+cu111
++torchvision==0.11.0+cu111
+ tqdm>=4.41.0
+ 
+ # logging -------------------------------------
+-- 
+2.25.1
+

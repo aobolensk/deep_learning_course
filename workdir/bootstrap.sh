@@ -6,6 +6,7 @@ python3 -m pip install gdown cython wheel numpy opencv-python
 
 git clone https://github.com/WongKinYiu/yolor
 cd yolor
+git apply ../0001-Update-torch.patch
 python3 -m pip install -r requirements.txt
 
 git clone https://github.com/JunnYu/mish-cuda
