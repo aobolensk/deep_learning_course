@@ -8,6 +8,8 @@
 
 ### How to run:
 
+Clone repository and run from repository folder:
+
 ```console
 $ docker run -v $PWD/workdir:/workdir -it ghcr.io/aobolensk/deep_learning_course:latest
 ```
