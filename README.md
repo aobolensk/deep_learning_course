@@ -9,6 +9,11 @@
 ### How to run:
 
 ```console
+$ docker run -v $PWD/workdir:/workdir -it ghcr.io/aobolensk/deep_learning_course:latest
+```
+
+Alternative:
+```console
 $ docker build -t dl_test .
 $ docker run -v $PWD/workdir:/workdir -it dl_test
 ```
