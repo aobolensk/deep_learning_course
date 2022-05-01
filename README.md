@@ -3,7 +3,6 @@
 ## yolor image detection environment
 
 ### Requirements:
-- OS: Ubuntu 20.04 (WSL 2 is also supported)
 - docker
 
 ### How to run:
